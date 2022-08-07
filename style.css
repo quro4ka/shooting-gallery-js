@@ -31,12 +31,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     transform-origin: 50% bottom;
+    transition: 1s;
 }
 
 .die {
-    animation: died 0.5s forwards;
+    transform: rotateX(90deg);
 }
 
-@keyframes died {
-    100% {transform: rotateX(90deg) }
-}
