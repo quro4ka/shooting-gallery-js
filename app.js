@@ -1,8 +1,14 @@
 let shot = document.querySelector('.shot')
 let hit = document.querySelector('.hit')
 let count = document.querySelector('.count span')
+let guns = document.querySelector('.guns')
 
 let counter = 0
+
+window.addEventListener('mousemove',function(ev){(function(e){
+    e.style.left = ev.clientX - 100 +"px";
+    e.style.top = ev.clientY + 200 +"px";
+})(document.querySelector('.gun'))},false);
 
 document.body.addEventListener('click', playShot)
 
