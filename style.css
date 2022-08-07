@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: url('aim.cur'), default;
+    background-color: #c1cece;
+}
+
+.table {
+    width: 90%;
+    border-bottom: 5px solid #644f4f;
+    display: flex;
+    justify-content: space-around;
+    height: 220px;
+    align-items: flex-end;
+}
+
+.character {
+    padding: 25px 25px 0;
+    width: 150px;
+    height: 200px;
+    background: url("./character.png") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: 50% bottom;
+}
+
+.die {
+    animation: died 0.5s forwards;
+}
+
+@keyframes died {
+    100% {transform: rotateX(90deg) }
+}
