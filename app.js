@@ -1,7 +1,18 @@
 let shot = document.querySelector('.shot')
 let hit = document.querySelector('.hit')
 let count = document.querySelector('.count span')
-let guns = document.querySelector('.guns')
+let selectGun = document.querySelector('.select-gun')
+let gun = document.querySelector('.gun')
+
+
+selectGun.addEventListener('click', (e) => {
+    const dataGun = e.target.dataset.gun
+    console.log(e.target.dataset.gun)
+
+    console.log(gun.src)
+    gun.src = `./${dataGun}.png` || `./${dataGun}.jpg`
+    console.log(gun.src)
+})
 
 let counter = 0
 
