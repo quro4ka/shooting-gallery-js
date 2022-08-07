@@ -3,7 +3,9 @@ let hit = document.querySelector('.hit')
 let count = document.querySelector('.count span')
 let selectGun = document.querySelector('.select-gun')
 let gun = document.querySelector('.gun')
+let table = document.querySelector('.table')
 
+console.log(table)
 
 selectGun.addEventListener('click', (e) => {
     const dataGun = e.target.dataset.gun
@@ -21,7 +23,8 @@ window.addEventListener('mousemove',function(ev){(function(e){
     e.style.top = ev.clientY + 200 +"px";
 })(document.querySelector('.gun'))},false);
 
-document.body.addEventListener('click', playShot)
+table.addEventListener('click', playShot)
+
 
 function playShot(e)  {
     let element = e.target
